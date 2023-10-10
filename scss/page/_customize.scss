@@ -1,0 +1,104 @@
+#customize {
+    padding: $sp-50 * 2 0;
+    background-color: $color-milk;
+    text-align: center;
+    > div {
+        width: 90%;
+        margin: 0 auto;
+        .customize__content__top {
+            .customize__item {
+                .customize__text {
+                    background-color: $color-white;
+                    padding: $sp-40 $sp-50;
+                    box-shadow: 0 5px 10px 0 rgba(8, 29, 42, 0.08);
+                    color: $color-blue-3;
+                    transition: transform 0.3s linear;
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
+                    i {
+                        font-size: $fs-4;
+                    }
+                    h4 {
+                        font-size: $fs-2;
+                        font-weight: $fw-bold;
+                        margin: $sp-10 0;
+                    }
+                    p {
+                        font-size: $fs-1;
+                    }
+                    button {
+                        border: 2px solid #2198dc;
+                        border-radius: 40px;
+                        background-color: #2198dc;
+                        font-size: 1.4rem;
+                        color: #fff;
+                        font-weight: bold;
+                        padding: $sp-5 $sp-15;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: transparent;
+                            color: $color-blue-1;
+                        }
+                    }
+                }
+            }
+        }
+        .customize__content__bottom {
+            padding-top: $sp-50;
+            .customize__right,
+            .customize__left {
+                // position: relative;
+                .customize__text {
+                    height: 350px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    background-clip: content-box;
+                    color: $color-white;
+                    position: relative;
+                    > div {
+                        position: absolute;
+                        bottom: 7%;
+                        h4 {
+                            font-weight: bold;
+                            margin-bottom: 20px;
+                            font-size: 1.8rem;
+                        }
+                        p {
+                            font-weight: 300;
+                            margin-bottom: 30px;
+                            padding: 0 20px;
+                        }
+                        button {
+                            border: 2px solid $color-orange;
+                            border-radius: 40px;
+                            background-color: $color-orange;
+                            font-size: 1.4rem;
+                            color: #fff;
+                            font-weight: bold;
+                            padding: $sp-5 $sp-15;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: $color-white;
+                                color: $color-orange;
+                            }
+                        }
+                    }
+                }
+            }
+            .customize__left {
+                .customize__text {
+                    padding-right: $sp-5;
+                    background-image: url(../img/intro-3.jpg);
+                }
+            }
+            .customize__right {
+                .customize__text {
+                    padding-left: $sp-5;
+                    background-image: url(../img/intro-4.jpg);
+                }
+            }
+        }
+    }
+}

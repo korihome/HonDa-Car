@@ -1,0 +1,134 @@
+#discover {
+    background-color: $color-milk;
+    padding-bottom: $sp-50;
+    .discover__title {
+        text-align: center;
+        margin-bottom: $sp-30;
+        h1 {
+            font-size: $fs-5;
+            color: $color-blue-3;
+        }
+        p {
+            color: $color-blue-4;
+            font-weight: 300;
+            font-size: 1.4rem;
+        }
+    }
+    .discover__content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        gap: $sp-20 0;
+        .discover__item {
+            .discover__text {
+                height: 450px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-clip: content-box;
+                background-position: center;
+                position: relative;
+                > div {
+                    position: absolute;
+                    bottom: 5%;
+                    h3 {
+                        font-weight: $fw-bold;
+                        margin-bottom: $sp-20;
+                        font-size: $fs-2;
+                        color: $color-blue-3;
+                    }
+                    p {
+                        font-weight: $fw-300;
+                        margin-bottom: $sp-20;
+                        font-size: $fs-1;
+                        padding: 0 $sp-20;
+                    }
+                    a {
+                        color: $color-blue-2;
+                        font-size: $fs-1;
+                        font-weight: $fw-bold;
+                        margin-bottom: $sp-20;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .discover__infor {
+            height: 450px;
+            background-color: $color-white;
+            text-align-last: left;
+            padding: 0 $sp-20;
+            position: relative;
+            > div {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                .discover__logo {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    img {
+                        border-radius: 7px;
+                    }
+                    > p {
+                        font-size: $fs-1;
+                        color: $color-blue-2;
+                        margin: $sp-10 0 $sp-10 $sp-5;
+                        a {
+                            text-decoration: none;
+                            font-weight: $fw-bold;
+                            display: block;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                        a:last-child {
+                            font-weight: $fw-300;
+                        }
+                    }
+                }
+                .discover__detail {
+                    p {
+                        font-size: $fs-1;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-size: $fs-1;
+                        color: $color-blue-2;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                    .time {
+                        font-size: $fs-1;
+                        color: $color-blue-2;
+                    }
+                    .social {
+                        color: $color-blue-2;
+                        > span {
+                            margin: 0 $sp-15;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .discover__footer {
+        margin-top: $sp-50;
+        text-align: center;
+        button {
+            border: 2px solid $color-orange;
+            border-radius: $sp-40;
+            background-color: $color-orange;
+            color: $color-white;
+            font-weight: $fw-bold;
+            padding: $sp-5 $sp-15;
+            font-size: $fs-1;
+            cursor: pointer;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        button:hover {
+            background-color: $color-white;
+            color: $color-orange;
+        }
+    }
+}

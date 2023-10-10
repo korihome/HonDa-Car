@@ -1,0 +1,104 @@
+@media screen and (max-width: 991.98px) {
+    #intro {
+        .intro__content {
+            width: 95%;
+            .intro__item {
+                height: 300px;
+                &:first-child {
+                    padding-right: $sp-10;
+                    .intro__text {
+                        h4 {
+                            margin-bottom: $sp-15;
+                        }
+                        p {
+                            margin-bottom: $sp-15;
+                        }
+                    }
+                }
+                &:last-child {
+                    padding-left: $sp-10;
+                    .intro__text {
+                        top: 55%;
+                        h3, p {
+                            font-size: $fs-1;
+                        }
+                        button {
+                            font-size: $fs-1 - 0.2;
+                            padding: $sp-5 $sp-10;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    #intro {
+        .intro__content {
+            width: 85%;
+            .intro__item {
+                height: 350px;
+                padding: 0 !important;
+                &:first-child {
+                    margin-bottom: $sp-15;
+                    .intro__text {
+                        h4 {
+                            margin-bottom: $sp-15;
+                        }
+                        p {
+                            margin-bottom: $sp-15;
+                        }
+                    }
+                }
+                &:last-child {
+                    .intro__text {
+                        top: 55%;
+                        h3, p {
+                            font-size: $fs-2;
+                        }
+                        button {
+                            font-size: $fs-1;
+                            padding: $sp-5 $sp-10;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    #intro {
+        .intro__content {
+            .intro__item {
+                height: 250px;
+                padding: 0 !important;
+                &:first-child {
+                    margin-bottom: $sp-15;
+                    .intro__text {
+                        h4, p {
+                            margin-bottom: $sp-15;
+                        }
+                        button {
+                            font-size: $fs-1 - 0.2;
+                        }
+                    }
+                }
+                &:last-child {
+                    .intro__text {
+                        width: 45%;
+                        top: 55%;
+                        left: 27%;
+                        h3, p {
+                            font-size: $fs-1;
+                        }
+                        button {
+                            font-size: $fs-html;
+                            padding: $sp-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+#header__search {
+    position: relative;
+    > div {
+        padding: $sp-15 $sp-40;
+        background-color: $color-milk;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            background-color: $color-milk;
+            top: -10%;
+            right: 1.5%;
+        }
+        .search-area {
+            i {
+                font-size: $fs-2;
+                color: $color-blue-2;
+                margin-right: $sp-20;
+                width: 5%;
+            }
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                height: 3rem;
+                width: 90%;
+                font-size: $fs-3;
+                font-weight: normal;
+                color: $color-blue-2;
+                &::placeholder {
+                    font-size: $fs-3;
+                    font-weight: normal;
+                }
+            }
+        }
+        .btn-area {
+            display: grid;
+            place-items: center;
+            button {
+                font-size: $fs-1;
+                font-weight: $fw-bold;
+                color: $color-blue-2;
+                border: 2px solid $color-blue-2;
+                background-color: transparent;
+                padding: $sp-5 $sp-15;
+                border-radius: 15px;
+                &:hover {
+                    background-color: $color-blue-2;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

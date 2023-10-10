@@ -1,0 +1,60 @@
+@each $stt,
+    $bg-color
+        in (1, hsla(210, 21%, 30%, 0.5))
+        (2, rgba(94, 94, 94, 0.5))
+        (3, rgba(20, 65, 154, 0.5))
+        (4, rgba(231, 100, 100, 0.5))
+{
+    .img-#{$stt}:hover {
+        background: linear-gradient(to bottom, $bg-color, 15%, transparent) !important;
+    }
+}
+
+$number: 1, 2, 3, 4, 5, 6, 7, 8;
+@each $stt in $number {
+    .delay-#{$stt} {
+        animation-delay: (0.2s * $stt);
+    }
+}
+
+@each $stt, $img in (1, banner-1), (2, banner-2), (3, banner-3), (4, banner-4) {
+    #carousel {
+        .carousel__content {
+            .swiper-wrapper {
+                .slide-#{$stt} {
+                    background-image: url(../img/#{$img}.jpg);
+                    @media screen and (max-width: 767.98px) {
+                        background-image: url(../img/#{$img}-xs.jpg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@each $stt, $img in (1, slider-1) (2, slider-2) (3, slider-3) (4, slider-4) (5, slider-5) {
+    #our {
+        .tab-content {
+            .item-#{$stt} {
+                background-image: url(../img/#{$img}.jpg);
+            }
+            @media screen and (max-width: 767.98px) {
+                .item-#{$stt} {
+                    background-image: url(../img/#{$img}-xs.jpg);
+                }
+            }
+        }
+    }
+}
+
+@each $stt, $img in (1, discover-1) (2, discover-2) (3, discover-3) (4, discover-4) (5, discover-5) {
+    #discover {
+        .discover__content {
+            .discover__item {
+                .text-#{$stt} {
+                    background-image: url(../img/#{$img}.jpg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,349 @@
+@media screen and (max-width: 1199.95px) {
+    #header {
+        #vehicles__popup {
+            #vehicles__content {
+                .vehicle__list {
+                    .vehicle__item {
+                        padding: $sp-15;
+                        .vehicle__child {
+                            .vehicle__cost {
+                                .vehicle__infor {
+                                    .infor__left,
+                                    .infor__right {
+                                        h3 {
+                                            font-size: $fs-2 + 0.2;
+                                        }
+                                        p {
+                                            font-size: $fs-1 + 0.2;
+                                        }
+                                    }
+                                }
+                                .vehicle__button {
+                                    margin-top: $sp-10;
+                                    button {
+                                        padding: $sp-10 $sp-15;
+                                        font-size: $fs-html;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991.95px) {
+    #header {
+        #navbar {
+            a {
+                padding: 15px;
+                font-size: $fs-1 - 0.2;
+            }
+            .navbar-collapse {
+                border-top: 1px solid $color-white-05;
+                .nav-item {
+                    border-bottom: 1px solid $color-white-05;
+                }
+            }
+            .navbar-nav {
+                .nav-item {
+                    .dropdown-item {
+                        width: 30rem;
+                        &#owners-dropitem::before {
+                            right: 15%;
+                        }
+                        &#discover-dropitem::before {
+                            right: 18%;
+                        }
+                        &#english-dropitem::before {
+                            right: 14%;
+                        }
+                        .drop-right,
+                        .drop-left {
+                            h3 {
+                                font-size: $fs-1 + 0.2;
+                            }
+                            ul {
+                                li {
+                                    a {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+                        }
+                        .drop-bottom {
+                            i {
+                                font-size: $fs-2 - 0.2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #header__search {
+            > div {
+                padding: $sp-15 $sp-30;
+                &::before {
+                    display: none;
+                }
+                .search-area {
+                    i {
+                        font-size: $fs-1;
+                        margin-right: $sp-10;
+                    }
+                    input {
+                        font-size: $fs-1;
+                        &::placeholder {
+                            font-size: $fs-1;
+                        }
+                    }
+                }
+                .btn-area {
+                    button {
+                        font-size: $fs-html;
+                        padding: $sp-5;
+                    }
+                }
+            }
+        }
+        #vehicles__popup {
+            #vehicles__content {
+                .btn__close {
+                    display: block;
+                    top: 10%;
+                    right: -6%;
+                    button {
+                        font-size: 1.2rem;
+                        padding: $sp-10;
+                    }
+                }
+                .nav__vehicle {
+                    ul {
+                        padding: $sp-15;
+                    }
+                }
+                .vehicle__list {
+                    padding: 25px 15px 25px 25px;
+                    .vehicle__title {
+                        .vehicle__text {
+                            > span {
+                                top: -30px;
+                            }
+                        }
+                    }
+                    .vehicle__item {
+                        padding: $sp-15;
+                        .vehicle__child {
+                            .vehicle__cost {
+                                .vehicle__infor {
+                                    .infor__left,
+                                    .infor__right {
+                                        h3 {
+                                            font-size: $fs-2 + 0.2;
+                                        }
+                                        p {
+                                            font-size: $fs-1;
+                                        }
+                                    }
+                                }
+                                .vehicle__button {
+                                    margin-top: $sp-5;
+                                    button {
+                                        font-weight: $fw-bold;
+                                        padding: $sp-10;
+                                        font-size: $fs-html;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.95px) {
+    #header {
+        #navbar {
+            a {
+                font-size: 1.2rem;
+                padding: $sp-10 $sp-15;
+            }
+            .navbar-nav {
+                .nav-item {
+                    a {
+                        padding: $sp-15;
+                    }
+                    .dropdown-item {
+                        width: 40rem;
+                        left: 0;
+                        right: unset;
+                        z-index: 1;
+                        &::before {
+                            left: 7%;
+                            right: unset;
+                        }
+                        .drop-right,
+                        .drop-left {
+                            ul {
+                                li {
+                                    a {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #header__search {
+            > div {
+                padding: $sp-5 $sp-10;
+                &::before {
+                    display: none;
+                }
+                .search-area {
+                    i {
+                        font-size: $fs-1;
+                        margin-right: $sp-10;
+                    }
+                    input {
+                        font-size: $fs-1;
+                        &::placeholder {
+                            font-size: $fs-1;
+                        }
+                    }
+                }
+                .btn-area {
+                    button {
+                        font-size: $fs-html;
+                        padding: $sp-5;
+                    }
+                }
+            }
+        }
+        #vehicles__popup {
+            #vehicles__content {
+                .btn__close {
+                    display: none;
+                }
+                .nav__vehicle {
+                    ul {
+                        padding: $sp-5;
+                        li {
+                            display: block;
+                            a {
+                                font-size: $fs-1;
+                                padding: 0 $sp-10;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+                .vehicle__list {
+                    padding: 20px 10px 20px 20px;
+                    .vehicle__item {
+                        padding: $sp-10;
+                        .vehicle__child {
+                            .vehicle__cost {
+                                .vehicle__infor {
+                                    .infor__left,
+                                    .infor__right {
+                                        h3 {
+                                            font-size: $fs-1;
+                                        }
+                                        p {
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                }
+                                .vehicle__button {
+                                    margin-top: $sp-5;
+                                    button {
+                                        font-weight: normal;
+                                        padding: $sp-5;
+                                        font-size: $fs-html;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.95px) {
+    #header {
+        #navbar {
+            a {
+                font-size: 1.2rem;
+                padding: $sp-10 $sp-15;
+            }
+            .navbar-nav {
+                .nav-item {
+                    .dropdown-item {
+                        width: 30rem;
+                    }
+                }
+            }
+        }
+        #vehicles__popup {
+            #vehicles__content {
+                width: 90%;
+                .btn__close {
+                    display: none;
+                }
+                .nav__vehicle {
+                    ul {
+                        li {
+                            a {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+                .vehicle__list {
+                    padding: 20px 10px 20px 20px;
+                    .vehicle__title {
+                        .vehicle__text {
+                            > span {
+                                font-size: $fs-2;
+                                top: -25px;
+                            }
+                        }
+                    }
+                    .vehicle__item {
+                        padding: $sp-5;
+                        .vehicle__child {
+                            .vehicle__cost {
+                                .vehicle__name {
+                                    font-size: $fs-1;
+                                }
+                                .vehicle__infor {
+                                    .infor__left,
+                                    .infor__right {
+                                        h3 {
+                                            font-size: 1.2rem;
+                                        }
+                                    }
+                                }
+                                .vehicle__button {
+                                    margin-top: $sp-5;
+                                    button {
+                                        padding: $sp-5 - 3;
+                                        font-size: 9px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

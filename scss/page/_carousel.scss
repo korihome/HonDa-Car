@@ -1,0 +1,56 @@
+#carousel {
+    height: 800px;
+    padding-top: $sp-50;
+    background-color: $color-blue-3;
+    .carousel__content {
+        height: 500px;
+        position: relative;
+        .carousel__button {
+            position: absolute;
+            top: 77%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            border: 2px solid #ff4040;
+            border-radius: 40px;
+            background-color: #ff4040;
+            color: #fff;
+            font-weight: bold;
+            padding: 6px 15px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            &:hover {
+                background-color: #fff;
+                color: #ff4040;
+            }
+        }
+        .swiper-wrapper {
+            height: 93%;
+            .swiper-slide {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 40%;
+            padding: $sp-50 $sp-30;
+            background-color: #ffffffe6;
+            border-radius: 9%;
+        }
+        .swiper-button-prev {
+            left: -0.5%;
+        }
+        .swiper-button-next {
+            right: -0.5%;
+        }
+        .swiper-pagination {
+            span {
+                width: $fs-html;
+                height: $fs-html;
+                background-color: $color-blue-1;
+            }
+        }
+    }
+}

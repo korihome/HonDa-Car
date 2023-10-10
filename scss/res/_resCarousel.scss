@@ -1,0 +1,33 @@
+@media screen and (max-width: 1199.98px) {
+    #carousel {
+        height: 750px;
+        .carousel__content {
+            height: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    #carousel {
+        height: 700px;
+        .carousel__content {
+            height: 400px;
+            .swiper-button-next,
+            .swiper-button-prev {
+                top: 40%;
+                padding: $sp-30 $sp-20;
+                background-color: #ffffffe6;
+                border-radius: 9%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    #carousel {
+        height: 800px;
+        .carousel__content {
+            height: 500px;
+        }
+    }
+}
